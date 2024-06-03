@@ -1,0 +1,319 @@
+body {
+    background-color: beige;
+    font-family: sans-serif;
+}
+
+.profile-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-details .profile-image img {
+    height: 8em;
+    width: auto;
+    margin-top: .5em;
+}
+
+.foreing-context {
+    margin-top: 1em;
+}
+
+.flex-content-table div:not([class]) {
+    outline: 1px solid black;
+    padding: 0.5em;
+}
+
+.flex-content-table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-content-table > * {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.historical-title {
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 576px){
+    .profile-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-details .full-name {
+        margin-bottom: 1px;
+    }
+
+    .profile-details .profile-image img {
+        max-width: 100%;
+    }
+
+    /* city section style */
+
+    .city-details {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .city-details .city-image img {
+        width: 100%; 
+        height: 100%;
+    }
+    
+    .city-details .city-text {
+        width: 100%;
+        margin: .5rem; 
+    }
+
+    .city-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* places section style */
+
+    .place-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .first-place, .place-image, .div-image {
+        flex: 1 50%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .first-place h2 {
+        margin-bottom: 1em;
+    }
+    
+    .place-image img {
+        flex: 1;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    /* .suncity-image:nth-of-type(4){
+        order: -1;
+    } */
+
+    .container .place-content .suncity-image {
+        order: -1;
+    }
+
+    /* .container .place-content .suncity-image {
+        order: -3;
+    } */
+
+    /* .container .place-content .suncity-image img {
+        order: 1;
+    } */
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .profile-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .profile-details .full-name {
+        margin-right: 7em;
+    }
+
+    .profile-details .profile-image img {
+        max-width: 100%;
+        margin-left: 7em;
+    }  
+    
+    /* city section styles */
+
+    .city-details {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .city-details .city-image img {
+        width: 250px; 
+        height: 100%;
+    }
+    
+    .city-details .city-text {
+        width: 14em;
+        margin-left: auto; 
+    }
+
+    /* places section style */
+
+    .place-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .first-place, .place-image, .div-image {
+        flex: 1 50%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .first-place h2 {
+        margin-bottom: 1em;
+    }
+    
+    .place-image img {
+        flex:1;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    
+    .new-town-text {
+        text-align: left;
+    }
+    
+    .suncity-image {
+        order: -1;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .profile-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .profile-details .full-name {
+        margin-right: 7em;
+    }
+
+    .profile-details .profile-image img {
+        max-width: 100%;
+        margin-left: 7em;
+    }
+
+    /* city section style css */
+
+    .city-details {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .city-details .city-image img {
+        width: 17em; 
+        height: 100%;
+    }
+    
+    .city-details .city-text {
+        width: 30em;
+        margin-left: auto; 
+    }
+
+    /* places section style */
+    
+    .place-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .first-place, .place-image, .div-image {
+        flex: 1 50%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .first-place h2 {
+        margin-bottom: 1em;
+    }
+    
+    .place-image img {
+        flex: 1;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .new-town-text {
+        text-align: left;
+    }
+    
+    .suncity-image {
+        order: -1;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .profile-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .profile-details .full-name > * {
+        margin-right: 15em;
+    }
+
+    .profile-details .profile-image img {
+        max-width: 100%;
+        margin-left: 7em;
+    }
+
+    /* city section styling */
+
+    .city-details {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .city-details .city-image img {
+        width: 12em;
+        height: 9em;
+    }
+    
+    .city-details .city-text {
+        max-width: 46%;
+        margin-left: 10em;
+    }
+
+    /* places section style */
+
+    .place-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .first-place, .place-image, .div-image {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .first-place h2 {
+        margin-bottom: 1em;
+    }
+    
+    .place-image img {
+        flex: 1;
+        max-width: 100%;
+        object-fit: cover;
+    }
+} 

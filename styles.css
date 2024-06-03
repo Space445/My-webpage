@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    background-color: beige;
+  }
+  
+  .container {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 1px solid black;
+  }
+  
+  .table .table_2 th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left; 
+    border-collapse: collapse;
+  }
+  
+  .col  {
+    margin-top: 1em;
+  }
+  
+  .col .Images img {
+    margin-top: 2.5em;
+  }
+  
+  /* For small screens */
+  @media screen and (max-width: 576px) {
+      .profile {
+        text-align: center;
+      }
+  
+      .profile-name h2 {
+        margin-left: auto;
+        margin-top: 3em;
+      }
+  
+      .historical-places img {
+        width: 100%; 
+        margin-bottom: 20px;
+      }
+  
+      .historical-places h2 {
+        text-align: center;
+      }
+  
+      .historicalplaces-text {
+        text-align: center;
+      }
+    
+      .col {
+        flex-basis: calc(50% - 10px);
+      }
+  
+      .col .Images img {
+        height: 8em;
+        width: auto;
+        margin-top: .5em;
+      }
+    }
+    
+    /* For medium screens */
+    @media screen and (min-width: 580px) and (max-width: 990px) {
+      .profile {
+        text-align: center;
+      }
+  
+      .profile-full-name h2 {
+        margin-left: auto;
+        margin-top: 3em;
+      }
+    
+      .col {
+        flex-basis: calc(50% - 10px);
+      }
+    }
+    
+    /* For large screens */
+    @media screen and (min-width: 990px) and (max-width: 1200px) {
+      .profile {
+        text-align: center;
+      }
+  
+      .profile-full-name h2 {
+        margin-left: auto;
+        margin-top: 3em;
+      }
+    }
+    
+    /* For extra-large screens */
+    @media screen and (min-width: 1200px) {
+      .profile {
+        text-align: center;
+      }
+  
+      .profile-full-name h2 {
+        margin-left: auto;
+        margin-top: 3em;
+      }
+  }

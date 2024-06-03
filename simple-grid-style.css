@@ -1,0 +1,79 @@
+.profile {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile .row {
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    
+}
+
+.row .image img {
+    display: flex;
+    height: 200px;
+    padding: 5px;
+    width: 100%;
+}
+
+.full-name {
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+}
+
+
+/* city section stying */
+.row .col-12-sm {
+    display: flex;
+}
+
+.row .col-12-sm img {
+    width: 50%;
+}
+
+.row .text {
+    width: 700%;
+    margin-top: 1.5em;
+}
+
+/* foreign languages styles */
+  
+.table, tr, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+/* Historical places styles */
+
+.row .col-10 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-images-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Images {
+    display: flex; 
+    align-items: center;
+    flex: 1;
+}
+
+.Images img {
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: .5em;
+}
+
+.flex-images-container .text {
+    width: 20%;
+    margin: .5em;
+    justify-content: space-around;
+    flex: 1;
+}
